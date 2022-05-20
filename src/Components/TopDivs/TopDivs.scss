@@ -1,0 +1,44 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+.secondTopDiv__row {
+	padding-top: 100px;
+}
+.secondTopDiv__col {
+	display: flex;
+	align-items: center;
+}
+.secondTopDiv__image {
+	animation: image1 1.5s ease-out forwards;
+	background-position: right !important;
+	background-repeat: no-repeat !important;
+	width: 100%;
+}
+@keyframes image1 {
+	0% {
+		background-size: 25% 100%;
+	}
+	50% {
+		background-size: 100% 140%;
+	}
+	100% {
+		background-size: 25% 100%;
+	}
+}
+.heroHeaderAnimation {
+	animation: heroHeader 0.8s ease-out 1.6s forwards;
+	visibility: hidden;
+}
+@keyframes heroHeader {
+	0% {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0%);
+		opacity: 1;
+		visibility: visible;
+	}
+}

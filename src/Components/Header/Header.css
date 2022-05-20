@@ -1,0 +1,21 @@
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
+
+#header__locked {
+  position: fixed;
+  top: 0;
+}
+
+.header__row {
+  height: 100px;
+}
+
+.header__logo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100px;
+}
+/*# sourceMappingURL=Header.css.map */

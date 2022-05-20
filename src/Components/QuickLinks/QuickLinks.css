@@ -1,0 +1,12 @@
+.quickLinks__row {
+	height: 20%;
+}
+.quickLinks__col {
+	color: white;
+	z-index: 1;
+}
+.quickLinks__col p {
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+}

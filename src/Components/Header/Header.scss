@@ -1,0 +1,19 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+.header {
+	position: absolute;
+	top: 0;
+	z-index: 99;
+}
+#header__locked {
+	position: fixed;
+	top: 0;
+}
+.header__row {
+	height: 100px;
+}
+.header__logo {
+	object-fit: cover;
+	width: 100px;
+}

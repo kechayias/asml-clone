@@ -1,0 +1,79 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+.hotspots {
+	position: relative;
+	
+}
+
+.hotspots__image {
+	object-fit: cover;
+	width: 100%;
+}
+
+.hotspots__spot {
+	position: absolute;
+	background-color: #1297e4;
+	width: 40px;
+	height: 40px;
+	color: white;
+	cursor: pointer;
+	border-radius: 50%;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 5px;
+}
+.hotspots__spotTitle {
+	display: none;
+}
+.hotspots__spotBorder {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	border: 4px solid white;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.hotspots__spot:hover .hotspots__spotBorder {
+	position: absolute;
+	top: -25%;
+	left: -25%;
+	border: 4px solid white;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.hotspots__spot:hover .hotspots__spotTitle {
+	position: absolute;
+	display: block;
+	font-size: 16px;
+	top: -40px;
+
+	color: white;
+	background: blue
+		linear-gradient(to right, rgb(255, 0, 0) -150%, rgba(0, 0, 0, 0) 100%);
+	width: max-content;
+	text-align: center;
+	border-radius: 20px;
+	padding: 0px 10px;
+	z-index: 3;
+	animation: mymove 0.2s ease-out;
+}
+@keyframes mymove {
+	from {
+		top: 0px;
+		transform: translate(50%) rotate(90deg);
+	}
+	to {
+		top: -40px;
+	}
+}
+

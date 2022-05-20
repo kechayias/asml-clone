@@ -1,0 +1,74 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+.hotspotModal {
+	position: absolute;
+	top: 0;
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+.hotspotModal__image {
+	height: 100%;
+	width: 50%;
+	height: 100%;
+}
+.hotspotModal__container {
+	height: 100%;
+	width: 50%;
+	background-color: #3f22bb;
+	opacity: 0.8;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 100px;
+}
+.hotspotModal__title {
+	font-size: 48px;
+	font-weight: 600;
+}
+.hotspotModal__text {
+	font-size: 20px;
+}
+.hotspotModal__navLink {
+	height: 30px;
+	text-decoration: none;
+}
+
+.hotspotModal__navLink span {
+	color: #0f238c;
+	font-size: 20px;
+	font-weight: 700;
+	border-bottom: 1px solid lightgray;
+	width: fit-content;
+	text-decoration: none;
+	padding-bottom: 4px;
+	margin-bottom: 10px;
+	color: white;
+}
+.hotspotModal__navLink span:hover {
+	padding-bottom: 1px;
+}
+
+.hotspotModal__navLink:hover {
+	padding-bottom: 10px;
+}
+.hotspotModal__closeButton {
+	position: absolute;
+	top: 5%;
+	left: calc(50% - 25px);
+	border-radius: 50%;
+	border: none;
+	color: #1297e4;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hotspotModal__closeButton:hover {
+	background-color: lightgray;
+}

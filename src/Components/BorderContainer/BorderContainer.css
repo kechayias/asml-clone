@@ -1,0 +1,18 @@
+.borderContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+.borderContainer__row {
+	height: 100%;
+}
+
+.borderContainer__col {
+	border-right: 1px solid lightgray;
+}
+
+.borderContainer__col:first-child {
+	border-left: 1px solid lightgray;
+}

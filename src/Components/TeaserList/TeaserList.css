@@ -1,0 +1,15 @@
+.teaserList__col {
+	z-index: 1;
+	height: 100%;
+}
+.slider {
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+.slider__inner {
+	display: flex;
+	position: absolute;
+	left: 0;
+	overflow: hidden;
+}

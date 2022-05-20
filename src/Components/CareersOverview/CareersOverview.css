@@ -1,0 +1,30 @@
+.careersOverview__col {
+	border-top: 1px solid lightgray;
+	border-top: 1px solid lightgray;
+	z-index: 2;
+	position: relative;
+}
+.careersOverview__col:last-child {
+	border-bottom: 1px solid lightgray;
+}
+
+.careersOverview__dateText {
+	font-size: 16px;
+	color: #0f238c;
+}
+.careersOverview__titleText {
+	font-size: 36px;
+	font-weight: 500;
+	color: #0f238c;
+}
+.careersOverview__categoriesContainer a {
+	border-radius: 30px;
+	margin-right: 10px;
+	padding: 5px 20px;
+	color: #0f238c;
+	background-color: #eaecf4;
+}
+.careersOverview__favoritesContainer {
+	position: absolute;
+	right: 0;
+}

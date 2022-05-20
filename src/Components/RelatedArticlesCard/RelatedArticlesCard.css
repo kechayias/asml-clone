@@ -1,0 +1,27 @@
+.relatedArticleCard__container {
+	margin-right: 10px;
+}
+
+.relatedArticleCard__image {
+	object-fit: cover;
+	width: 100%;
+}
+.relatedArticleCard__body {
+	padding: 10px 10px 4px 10px;
+}
+.relatedArticleCard__body p {
+	line-height: 20px;
+}
+.relatedArticleCard__body::after {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 4px;
+	background-color: yellow;
+	width: 30px;
+	transition: linear 0.2s;
+}
+
+.relatedArticleCard__container:hover .relatedArticleCard__body::after {
+	width: 60px;
+}

@@ -1,0 +1,15 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+.heroHeader__col {
+	z-index: 1;
+}
+
+.heroHeader__row {
+	height: 100% !important;
+}
+.heroHeader__container {
+	background-size: cover !important;
+	background-repeat: repeat !important;
+}

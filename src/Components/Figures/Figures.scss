@@ -1,0 +1,53 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+.figureCounter__container span {
+	color: #0f238c;
+	font-size: 56px;
+	font-weight: 700;
+}
+.figure__title {
+	font-size: 20px;
+	font-weight: 500;
+	color: #0f238c;
+}
+.komma,
+.box {
+	display: inline-block;
+	overflow: hidden;
+	height: 59px;
+	line-height: 1em;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.box:after {
+	position: relative;
+	white-space: pre;
+	content: attr(data);
+}
+
+@property --num {
+	syntax: '<integer>';
+	initial-value: 0;
+	inherits: false;
+}
+
+.box {
+	animation: counter 1.5s linear forwards;
+	counter-reset: num var(--num);
+}
+
+.box::after {
+	content: counter(num);
+}
+
+@keyframes counter {
+	0% {
+		--num: 0;
+	}
+	100% {
+		--num: var(--number);
+	}
+}
